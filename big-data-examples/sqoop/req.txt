@@ -1,0 +1,11 @@
+sqoop import \
+    --num-mappers 1\
+    --connect jdbc:mysql://X.X.X.X:3306/user\
+    --table=table1\
+    --username=xxxxxxxxx\
+    --password=xxxxxxxxx\
+    --hive-import\
+    --create-hive-table\
+    --hive-database default\
+    --hive-table table1\
+    --as-parquetfile
